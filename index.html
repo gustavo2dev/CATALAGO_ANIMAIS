@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NatureLab</title>
+    <meta
+      name="description"
+      content="Sistema offline-first de catalogação de fauna."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/darkmode.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>NatureLab</h1>
+          <p>Catalogação de fauna em campo</p>
+        </div>
+        <nav class="topnav">
+          <a href="index.html" class="active">Início</a>
+          <a href="pages/dashboard.html">Dashboard</a>
+          <a href="pages/novo-registro.html">Novo Registro</a>
+          <a href="pages/especies.html">Espécies</a>
+          <a href="pages/estatisticas.html">Estatísticas</a>
+          <a href="pages/backup.html">Backup</a>
+          <a href="pages/configuracoes.html">Configurações</a>
+          <a href="pages/sobre.html">Sobre</a>
+        </nav>
+      </header>
+
+      <main class="page-grid">
+        <section class="hero-card card">
+          <h2>Resumo do observatório</h2>
+          <div class="stats-row" id="summary-stats"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <h3>Observações recentes</h3>
+            <a href="pages/novo-registro.html" class="btn btn-primary"
+              >Novo Registro</a
+            >
+          </div>
+          <div id="recent-records" class="list-stack"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <h3>Atalhos</h3>
+          </div>
+          <div class="shortcut-grid">
+            <a href="pages/novo-registro.html" class="shortcut-card"
+              >Novo Registro</a
+            >
+            <a href="pages/especies.html" class="shortcut-card">Pesquisar</a>
+            <a href="pages/estatisticas.html" class="shortcut-card"
+              >Estatísticas</a
+            >
+            <a href="pages/backup.html" class="shortcut-card">Backup</a>
+            <a href="pages/configuracoes.html" class="shortcut-card"
+              >Configurações</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

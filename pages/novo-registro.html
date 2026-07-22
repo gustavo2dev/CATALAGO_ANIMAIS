@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NatureLab | Novo Registro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/darkmode.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>NatureLab</h1>
+          <p>Novo registro</p>
+        </div>
+        <nav class="topnav">
+          <a href="../index.html">Início</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="novo-registro.html" class="active">Novo Registro</a>
+          <a href="especies.html">Espécies</a>
+          <a href="backup.html">Backup</a>
+          <a href="configuracoes.html">Configurações</a>
+        </nav>
+      </header>
+
+      <main class="form-page">
+        <form id="animal-form" class="card form-grid">
+          <h2>Cadastro de observação</h2>
+          <div class="field">
+            <label>Data<input name="data" type="date" required /></label>
+          </div>
+          <div class="field">
+            <label>Hora<input name="hora" type="time" required /></label>
+          </div>
+          <div class="field">
+            <label>Nome Popular<input name="nomePopular" /></label>
+          </div>
+          <div class="field">
+            <label>Nome Científico<input name="nomeCientifico" /></label>
+          </div>
+          <div class="field">
+            <label>Reino<input name="reino" /></label>
+          </div>
+          <div class="field">
+            <label>Filo<input name="filo" /></label>
+          </div>
+          <div class="field">
+            <label>Classe<input name="classe" /></label>
+          </div>
+          <div class="field">
+            <label>Ordem<input name="ordem" /></label>
+          </div>
+          <div class="field">
+            <label>Família<input name="familia" /></label>
+          </div>
+          <div class="field">
+            <label>Gênero<input name="genero" /></label>
+          </div>
+          <div class="field">
+            <label>Espécie<input name="especie" /></label>
+          </div>
+          <div class="field">
+            <label>Subespécie<input name="subespecie" /></label>
+          </div>
+          <div class="field">
+            <label
+              >Grupo Biológico<select name="grupoBiologico">
+                <option>Ave</option>
+                <option>Mamífero</option>
+                <option>Inseto</option>
+                <option>Anfíbio</option>
+                <option>Réptil</option>
+                <option>Peixe</option>
+                <option>Aranha</option>
+                <option>Molusco</option>
+                <option>Crustáceo</option>
+                <option>Outro</option>
+              </select></label
+            >
+          </div>
+          <div class="field">
+            <label
+              >Quantidade observada<input
+                name="quantidadeObservada"
+                type="number"
+                min="0"
+            /></label>
+          </div>
+          <div class="field">
+            <label>Sexo<input name="sexo" /></label>
+          </div>
+          <div class="field">
+            <label>Idade<input name="idade" /></label>
+          </div>
+          <div class="field">
+            <label
+              >Estado de desenvolvimento<input name="estadoDesenvolvimento"
+            /></label>
+          </div>
+          <div class="field">
+            <label>Cor predominante<input name="corPredominante" /></label>
+          </div>
+          <div class="field">
+            <label>Comprimento<input name="comprimento" /></label>
+          </div>
+          <div class="field">
+            <label>Peso estimado<input name="pesoEstimado" /></label>
+          </div>
+          <div class="field">
+            <label>Envergadura<input name="envergadura" /></label>
+          </div>
+          <div class="field">
+            <label
+              >Comportamento observado<textarea
+                name="comportamentoObservado"
+              ></textarea>
+            </label>
+          </div>
+          <div class="field">
+            <label
+              >Atividade<select name="atividade">
+                <option>Dormindo</option>
+                <option>Caçando</option>
+                <option>Comendo</option>
+                <option>Voando</option>
+                <option>Correndo</option>
+                <option>Cantando</option>
+                <option>Acasalando</option>
+                <option>Construindo ninho</option>
+                <option>Defendendo território</option>
+                <option>Migrando</option>
+                <option>Outro</option>
+              </select></label
+            >
+          </div>
+          <div class="field">
+            <label
+              >Habitat<select name="habitat">
+                <option>Floresta</option>
+                <option>Campo</option>
+                <option>Rio</option>
+                <option>Lago</option>
+                <option>Brejo</option>
+                <option>Área urbana</option>
+                <option>Plantação</option>
+                <option>Pastagem</option>
+                <option>Jardim</option>
+                <option>Outro</option>
+              </select></label
+            >
+          </div>
+          <div class="field">
+            <label
+              >Micro Habitat<select name="microHabitat">
+                <option>Solo</option>
+                <option>Árvore</option>
+                <option>Galho</option>
+                <option>Folha</option>
+                <option>Pedra</option>
+                <option>Água</option>
+                <option>Buraco</option>
+                <option>Cupinzeiro</option>
+                <option>Outro</option>
+              </select></label
+            >
+          </div>
+          <div class="field">
+            <label>Temperatura<input name="temperatura" /></label>
+          </div>
+          <div class="field">
+            <label>Umidade<input name="umidade" /></label>
+          </div>
+          <div class="field">
+            <label>Clima<input name="clima" /></label>
+          </div>
+          <div class="field">
+            <label
+              >Pressão atmosférica<input name="pressaoAtmosferica"
+            /></label>
+          </div>
+          <div class="field">
+            <label>Velocidade do vento<input name="velocidadeVento" /></label>
+          </div>
+          <div class="field">
+            <label>Condição do céu<input name="condicaoCeu" /></label>
+          </div>
+          <div class="field">
+            <label>Altitude<input name="altitude" /></label>
+          </div>
+          <div class="field">
+            <label>Latitude<input name="latitude" /></label>
+          </div>
+          <div class="field">
+            <label>Longitude<input name="longitude" /></label>
+          </div>
+          <div class="field">
+            <label>Cidade<input name="cidade" /></label>
+          </div>
+          <div class="field">
+            <label>Estado<input name="estado" /></label>
+          </div>
+          <div class="field">
+            <label>País<input name="pais" /></label>
+          </div>
+          <div class="field">
+            <label
+              >Descrição detalhada<textarea
+                name="descricaoDetalhada"
+              ></textarea>
+            </label>
+          </div>
+          <div class="field">
+            <label>Observações<textarea name="observacoes"></textarea></label>
+          </div>
+          <div class="field field-full">
+            <label
+              >Galeria<input
+                id="image-upload"
+                type="file"
+                accept="image/*"
+                multiple
+            /></label>
+          </div>
+          <div class="field field-full">
+            <div id="image-preview" class="gallery-preview"></div>
+          </div>
+          <div class="field field-full">
+            <button type="submit" class="btn btn-primary">
+              Salvar registro
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/registro.js"></script>
+  </body>
+</html>

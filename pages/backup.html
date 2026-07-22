@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NatureLab | Backup</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/darkmode.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>NatureLab</h1>
+          <p>Backup</p>
+        </div>
+        <nav class="topnav">
+          <a href="../index.html">Início</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="novo-registro.html">Novo Registro</a>
+          <a href="especies.html">Espécies</a>
+          <a href="backup.html" class="active">Backup</a>
+          <a href="configuracoes.html">Configurações</a>
+        </nav>
+      </header>
+
+      <main class="page-grid">
+        <section class="card">
+          <h2>Exportação e importação</h2>
+          <button id="export-backup" class="btn btn-primary">
+            Exportar Backup
+          </button>
+          <label class="btn btn-secondary" for="import-backup"
+            >Importar JSON</label
+          >
+          <input
+            id="import-backup"
+            type="file"
+            accept="application/json"
+            hidden
+          />
+          <div id="backup-status" class="status-box"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/backup.js"></script>
+  </body>
+</html>

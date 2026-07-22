@@ -1,0 +1,18 @@
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.species-card {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.species-card h3 {
+  margin: 0;
+}
+.species-card p,
+.species-card small,
+.species-card span {
+  margin: 4px 0;
+  color: var(--muted);
+}
