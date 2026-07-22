@@ -1,5 +1,5 @@
 import { Registro } from "../classes/Registro.js";
-import { saveRecord, loadRecords } from "./storage.js";
+import { saveRecord } from "./storage.js";
 import { createId } from "./utils.js";
 
 const form = document.querySelector("#animal-form");
@@ -46,21 +46,3 @@ form?.addEventListener("submit", async (event) => {
   renderPreview();
   alert("Registro salvo com sucesso!");
 });
-
-const seededRecords = loadRecords();
-if (!seededRecords.length) {
-  saveRecord(
-    new Registro({
-      id: createId(),
-      nomePopular: "Pica-pau-do-cerrado",
-      nomeCientifico: "Melanerpes candidus",
-      cidade: "São Paulo",
-      estado: "SP",
-      habitat: "Floresta",
-      clima: "Ensolarado",
-      data: new Date().toISOString().slice(0, 10),
-      hora: "08:30",
-      createdAt: new Date().toISOString(),
-    }).toJSON(),
-  );
-}
